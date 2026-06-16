@@ -1,9 +1,7 @@
 title: |
-  Creating Electronic Books
-  with Code and
-  Artificial Intelligence
-  Assistants
-author: Álvaro Lozano Murciego and André Filipe Sales Mendes
+  Big Data in
+  Financial Markets
+author: Mauricio Argotti
 copyright: "2026"
 logo: "_static/logo.png"
 language: en
@@ -50,10 +48,10 @@ latex_docclass:
 latex:
   latex_engine: xelatex
   options: "english"
-  subtitle: "Course for the Faculties of Sciences and Chemical Sciences"       # Optional
+  subtitle: ""
   header_title: |
-    Creating electronic books
-    with code and AI
+    Big Data in
+    Financial Markets
   institution: "Universidad de Salamanca"  # Optional
   edition: "1st Edition"                # Optional
   cover_logo: "_static/usal_logo.png"  # PDF cover logo; the web logo is configured above in `logo`

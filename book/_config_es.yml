@@ -1,9 +1,7 @@
 title: |
-  Elaboración de libros
-  electrónicos mediante
-  código y asistentes de
-  Inteligencia Artificial
-author: Álvaro Lozano Murciego y André Filipe Sales Mendes
+  Big Data en los
+  Mercados Financieros
+author: Mauricio Argotti
 copyright: "2026"
 logo: "_static/logo.png"
 language: es
@@ -50,10 +48,10 @@ latex_docclass:
 latex:
   latex_engine: xelatex
   options: "spanish"
-  subtitle: "Curso para las Facultades de Ciencias y de Ciencias Químicas"    # Opcional: subtítulo del libro
+  subtitle: ""
   header_title: |
-    Elaboración de libros electrónicos
-    con código e IA
+    Big Data en
+    Mercados Financieros
   institution: "Universidad de Salamanca"  # Opcional
   edition: "1ª Edición"               # Opcional
   cover_logo: "_static/usal_logo.png"  # Logo de la portada PDF; el logo web se configura arriba en `logo`
