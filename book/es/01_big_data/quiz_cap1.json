@@ -1,0 +1,62 @@
+[
+  {
+    "question": "¿Cuál de las siguientes afirmaciones describe correctamente la velocidad en el contexto del Big Data financiero?",
+    "type": "multiple_choice",
+    "answers": [
+      {"answer": "Cantidad total de datos generados por unidad de tiempo.", "correct": false, "feedback": "Incorrecto. Describe volumen, no velocidad."},
+      {"answer": "Rapidez con la que se producen y procesan los eventos del mercado, como actualizaciones del libro de órdenes.", "correct": true, "feedback": "Correcto. El documento define la velocidad como la rapidez con la que se generan eventos financieros y la necesidad de procesarlos en milisegundos."},
+      {"answer": "Número de tipos distintos de datos utilizados en un modelo predictivo.", "correct": false, "feedback": "Incorrecto. Describe variedad."},
+      {"answer": "Número de columnas independientes en una matriz de datos.", "correct": false, "feedback": "Incorrecto. Describe dimensionalidad efectiva, no velocidad."}
+    ]
+  },
+  {
+    "question": "Según el documento, ¿por qué la acción del precio sigue siendo una fuente robusta de información predictiva?",
+    "type": "multiple_choice",
+    "answers": [
+      {"answer": "Porque incorpora automáticamente datos alternativos como imágenes satelitales.", "correct": false, "feedback": "Incorrecto. Los datos alternativos pertenecen a la variedad."},
+      {"answer": "Porque es menos susceptible a ruido y redundancia que muchos indicadores derivados.", "correct": true, "feedback": "Correcto. La acción del precio es más estable y menos redundante que muchos indicadores derivados, los cuales introducen ruido."},
+      {"answer": "Porque elimina la necesidad de modelos predictivos.", "correct": false, "feedback": "Incorrecto. La acción del precio no elimina la necesidad de modelos."},
+      {"answer": "Porque garantiza predicciones perfectas en mercados líquidos.", "correct": false, "feedback": "Incorrecto. Ningún método garantiza predicciones perfectas."}
+    ]
+  },
+  {
+    "question": "¿Qué representa la dimensionalidad efectiva (De) en un conjunto de datos financieros?",
+    "type": "multiple_choice",
+    "answers": [
+      {"answer": "El número total de variables disponibles.", "correct": false, "feedback": "Incorrecto. Es el número de variables, no la dimensionalidad efectiva."},
+      {"answer": "El número de variables que presentan correlación perfecta.", "correct": false, "feedback": "Incorrecto. La correlación perfecta reduce De, no la define."},
+      {"answer": "El número real de dimensiones independientes en la matriz de datos.", "correct": true, "feedback": "Correcto. El documento define De como el número de columnas linealmente independientes (rango de la matriz)."},
+      {"answer": "El número de observaciones por unidad de tiempo.", "correct": false, "feedback": "Incorrecto. Eso corresponde a volumen o velocidad."}
+    ]
+  },
+  {
+    "question": "¿Qué indica un valor de divergencia normalizada |D| > 3 entre precio y RSI?",
+    "type": "multiple_choice",
+    "answers": [
+      {"answer": "Un desacoplamiento normal sin relevancia predictiva.", "correct": false, "feedback": "Incorrecto. |D| < 1 es desacoplamiento normal."},
+      {"answer": "Un evento estadísticamente significativo que puede anticipar un punto de inflexión.", "correct": true, "feedback": "Correcto. El documento establece que |D| > 3 indica un evento raro y crítico, asociado a transiciones o puntos de inflexión."},
+      {"answer": "Un error en el cálculo del RSI.", "correct": false, "feedback": "Incorrecto. No hay indicación de error en el RSI."},
+      {"answer": "Que el precio y el RSI evolucionan de forma perfectamente alineada.", "correct": false, "feedback": "Incorrecto. Un valor alto indica divergencia, no alineación."}
+    ]
+  },
+  {
+    "question": "¿Cuál de los siguientes problemas se menciona como una limitación clave de los modelos complejos como LSTM o Transformers?",
+    "type": "multiple_choice",
+    "answers": [
+      {"answer": "Su incapacidad para capturar patrones no lineales.", "correct": false, "feedback": "Incorrecto. Precisamente destacan por capturar no linealidades."},
+      {"answer": "Su fragilidad ante cambios de régimen y sobreajuste.", "correct": true, "feedback": "Correcto. El documento indica que estos modelos pueden deteriorarse ante cambios de régimen, ruido microestructural y sobreajuste."},
+      {"answer": "Su excesiva simplicidad y baja capacidad predictiva.", "correct": false, "feedback": "Incorrecto. Son complejos, no simples."},
+      {"answer": "Su imposibilidad de procesar datos de alta frecuencia.", "correct": false, "feedback": "Incorrecto. Sí pueden procesar datos de alta frecuencia."}
+    ]
+  },
+  {
+    "question": "Según el documento, una volatilidad del volumen (σv) situada por encima del percentil 75 indica:",
+    "type": "multiple_choice",
+    "answers": [
+      {"answer": "Actividad reducida y movimientos poco fiables.", "correct": false, "feedback": "Incorrecto. P25 corresponde a baja actividad."},
+      {"answer": "Actividad típica del mercado sin relevancia operativa.", "correct": false, "feedback": "Incorrecto. P50 corresponde a actividad normal."},
+      {"answer": "Aumento significativo de la actividad y mayor intensidad informacional.", "correct": true, "feedback": "Correcto. El percentil 75 corresponde a Alta volatilidad, asociada a mayor intensidad informacional."},
+      {"answer": "Un evento informacional extremadamente raro.", "correct": false, "feedback": "Incorrecto. P90 corresponde a eventos informacionales extremos."}
+    ]
+  }
+]
