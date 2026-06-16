@@ -627,7 +627,7 @@ Los problemas identificados forman un ecosistema de limitaciones que ha impedido
 En la construcción de modelos predictivos de la dirección o tendencia del precio del activo, es importante evitar incluir variables derivadas del precio sin un análisis previo de su capacidad discriminativa, de multicolinealidad, independencia y estructura multivariante.
 ``` 
 
-## **Bibliografía del Capítulo.** 
+## Bibliografía del Capítulo. 
 
 - Gandomi, A., & Haider, M. (2015). Beyond the hype: Big data concepts, methods, and analytics. International Journal of Information Management, 35(2), 137–144. 
 
