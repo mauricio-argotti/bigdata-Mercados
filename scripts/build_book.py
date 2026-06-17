@@ -678,11 +678,11 @@ def create_redirect_index(default_lang="es"):
     <!DOCTYPE html>
     <html>
     <head>
-        <meta http-equiv="refresh" content="0; url={default_lang}/intro.html" />
-        <script>window.location.href = "{default_lang}/intro.html";</script>
+        <meta http-equiv="refresh" content="0; url={default_lang}/index.html" />
+        <script>window.location.href = "{default_lang}/index.html";</script>
     </head>
     <body>
-        <p>Redirecting to <a href="{default_lang}/intro.html">{default_lang} version</a>...</p>
+        <p>Redirecting to <a href="{default_lang}/index.html">{default_lang} version</a>...</p>
     </body>
     </html>
     """

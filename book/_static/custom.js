@@ -226,8 +226,8 @@ function injectLanguageSwitcher(languages, rootPrefix) {
             <ul class="teachbook-lang-dropdown">
                 ${languages.map(l => {
         // rootPrefix is the relative path to the book root (e.g., "../" from /es/intro.html)
-        // So rootPrefix + "en/intro.html" = "../en/intro.html" which resolves correctly
-        const targetUrl = rootPrefix + `${l.code}/intro.html`;
+        // So rootPrefix + "en/index.html" = "../en/index.html" which resolves correctly
+        const targetUrl = rootPrefix + `${l.code}/index.html`;
 
         return `
                     <li>
@@ -263,8 +263,8 @@ function injectPDFButton(languages, rootPrefix) {
         });
 
         const pdfFilenames = {
-            "es": "ElaboracionDeLibrosElectronicosMedianteCodigoYAsistentesDeInteligenciaArtificial.pdf",
-            "en": "CreatingElectronicBooksWithCodeAndArtificialIntelligenceAssistants.pdf"
+            "es": "BigDataEnLosMercadosFinancieros.pdf",
+            "en": "BigDataInFinancialMarkets.pdf"
         };
         const pdfFilename = pdfFilenames[lang] || `TeachBook_${lang}.pdf`;
         const pdfUrl = rootPrefix + `_static/${pdfFilename}`;
