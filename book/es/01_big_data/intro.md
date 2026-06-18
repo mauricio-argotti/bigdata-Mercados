@@ -21,6 +21,10 @@ En paralelo, diversos estudios han demostrado que la acción del precio (**Price
 
 Este TeachBook propone un enfoque alternativo: modelos parsimoniosos, interpretables y estadísticamente robustos, construidos a partir de análisis multivariante y técnicas de selección de variables aplicadas a grandes volúmenes de datos. El objetivo es proporcionar un marco metodológico que permita a traders cuantitativos, gestores de activos y equipos de investigación construir modelos predictivos que no solo sean precisos, sino también explicables y defendibles ante comités de riesgo, reguladores y revisores académicos. 
 
+```{note}
+Las **tres V del Big Data** (Volumen, Velocidad y Variedad) no son un eslogan comercial, sino una descripción operativa de las restricciones reales bajo las que trabajan los modelos cuantitativos: límites de memoria, latencia y capacidad de representación. Ignorar estas restricciones conduce a modelos teóricamente elegantes pero prácticamente inservibles.
+```
+
 ## Modelos Predictivos
 
 El mundo de los mercados financieros ha experimentado un cambio significativo con la llegada de la era de los datos masivos y la tecnología de aprendizaje automático. La capacidad de procesar grandes cantidades de datos en tiempo real ha permitido a los modelos predictivos mejorar su precisión y eficacia en la predicción de precios y detección de patrones de mercado. Sin embargo, la complejidad de estos datos y la falta de interpretabilidad de estos modelos plantean nuevos desafíos para los analistas y los inversores. 
@@ -38,7 +42,7 @@ Panorama Actual de los Modelos Predictivos.
 
 La complejidad y volatilidad de los mercados financieros han llevado a la búsqueda de soluciones más efectivas para la predicción de precios y la toma de decisiones informadas. En este contexto, se presentan dos enfoques clave que han demostrado su capacidad para mejorar la precisión y eficiencia en la predicción de mercados financieros. 
 
-La investigación contemporánea en modelización financiera se encuentra en un punto de inflexión marcado por la convergencia entre Big Data, aprendizaje automático y **la necesidad creciente de modelos explicables**. El uso de arquitecturas avanzadas, desde pipelines de datos de alta frecuencia hasta redes profundas capaces de capturar patrones no lineales, ha ampliado significativamente la capacidad predictiva en mercados complejos. Sin embargo, esta sofisticación técnica ha venido acompañada de desafíos críticos: opacidad, fragilidad ante cambios de régimen, sobreajuste y dificultades para justificar decisiones en entornos regulados. 
+La investigación contemporánea en modelización financiera se encuentra en un `Punto de Inflexión` marcado por la convergencia entre Big Data, aprendizaje automático y **la necesidad creciente de modelos explicables**. El uso de arquitecturas avanzadas, desde pipelines de datos de alta frecuencia hasta redes profundas capaces de capturar patrones no lineales, ha ampliado significativamente la capacidad predictiva en mercados complejos. Sin embargo, esta sofisticación técnica ha venido acompañada de desafíos críticos: opacidad, fragilidad ante cambios de régimen, sobreajuste y dificultades para justificar decisiones en entornos regulados. 
 
 En este contexto, la acción del precio emerge nuevamente como una fuente primaria de información robusta, mientras que la gobernanza y la interpretabilidad de modelos se consolidan como requisitos esenciales para garantizar la fiabilidad operativa. Los siguientes apartados sintetizan los avances recientes y las tensiones metodológicas que definen el estado actual del campo. 
 
@@ -48,7 +52,7 @@ La literatura reciente destaca el uso de arquitecturas Big Data para procesar fl
 
 ### Aprendizaje automático y deep learning
 
-Modelos como **Random Forest**, **SVM**, **LSTM** y **Transformers** han mostrado capacidad para capturar relaciones no lineales y patrones complejos en series temporales financieras {cite:p}`gu2020empirical`. Sin embargo, estudios recientes advierten que su desempeño puede deteriorarse significativamente en presencia de cambios de régimen, ruido microestructural y sobreajuste, especialmente cuando no se aplican protocolos rigurosos de validación. 
+Modelos como **Random Forest**, **SVM**, **LSTM** y **Transformers** han mostrado capacidad para capturar relaciones no lineales y patrones complejos en series temporales financieras como lo han demostrado Gu et al.{cite:p}`gu2020empirical`. Sin embargo, estudios recientes advierten que su desempeño puede deteriorarse significativamente en presencia de cambios de régimen, ruido microestructural y sobreajuste, especialmente cuando no se aplican protocolos rigurosos de validación. 
 
 ### Acción del precio
 
@@ -62,11 +66,15 @@ La creciente preocupación por la opacidad de los modelos ha impulsado el inter�
 
 La literatura reciente muestra que la predicción financiera moderna se mueve entre dos polos. Por un lado, arquitecturas Big Data y modelos de aprendizaje profundo capaces de procesar volúmenes masivos de información y capturar patrones no lineales. Por otro lado, la necesidad creciente de interpretabilidad, estabilidad y gobernanza en entornos donde el riesgo operativo es crítico. 
 
-Aunque los modelos avanzados como Random Forest, SVM, LSTM y Transformers han demostrado un rendimiento notable en condiciones controladas, su fragilidad ante cambios de régimen, ruido microestructural y sobreajuste revela que la precisión histórica no garantiza robustez futura. En contraste, la acción del precio emerge como una fuente de información más estable y menos susceptible a distorsiones, mientras que muchos indicadores derivados introducen redundancia y degradan la calidad del modelo. 
+Aunque los modelos avanzados como **Random Forest**, **SVM**, **LSTM** y **Transformers** han demostrado un rendimiento notable en condiciones controladas, su fragilidad ante cambios de régimen, ruido microestructural y sobreajuste revela que la precisión histórica no garantiza robustez futura. En contraste, la acción del precio emerge como una fuente de información más estable y menos susceptible a distorsiones, mientras que muchos indicadores derivados introducen redundancia y degradan la calidad del modelo. 
 
 A este panorama se suma un hallazgo transversal la complejidad no siempre se traduce en mejor capacidad predictiva, y en mercados financieros, la explicabilidad es un requisito operativo, no un lujo metodológico. La literatura converge en que los modelos deben equilibrar precisión y transparencia, integrando prácticas de validación rigurosa, reducción de dimensionalidad y técnicas XAI (Inteligencia Artificial Explicable) que permitan justificar decisiones en contextos regulados. 
 
 Por otra parte, los estudios sugieren que el futuro de la predicción financiera no depende únicamente de modelos más sofisticados, sino de modelos más gobernables, auditables y resilientes, capaces de mantener un desempeño bajo condiciones cambiantes y de ofrecer señales comprensibles para la toma de decisiones. De este modo, el avance científico en el ámbito de la predicción financiera no depende únicamente de modelos más potentes, sino de modelos más responsables. La literatura converge en que la combinación óptima integra datos robustos (acción del precio), modelos parsimoniosos o explicables, validación estricta, y una gobernanza sólida del ciclo de vida del modelo. Este equilibrio es el que permite transformar precisión técnica en valor operativo real. 
+
+```{tip}
+En el **Análisis de Series Temporales Financieras**, la validación cruzada aleatoria convencional no es adecuada debido a que rompe la dependencia temporal y puede causar **Data Leakage**. En su lugar, se recomienda emplear esquemas de validación que respeten la secuencia temporal, como la **Walk-Forward Validation** o **Rolling Origin**, que permiten evaluar el modelo de manera más realista. Además, técnicas como el **Purged k-fold con embargo temporal** y una separación estricta entre conjuntos de entrenamiento, validación y prueba ayudan a reducir la sobrestimación del rendimiento y proporcionan una evaluación más fiable del modelo.
+```
 
 # Fundamentos Teóricos
 
@@ -139,7 +147,7 @@ La velocidad no solo afecta a la ejecución, sino también al análisis: modelos
 
 #### Velocidad de generación del dato (**$𝑉_𝑒$**):
 
-La velocidad de generación del dato es una métrica que cuantifica la rapidez con la que un sistema financiero produce eventos observables, como transacciones, actualizaciones en el libro de órdenes o cambios en el bid/ask, dentro de un intervalo de tiempo específico. Esta métrica permite evaluar la intensidad del flujo de información que un modelo predictivo o una arquitectura de Big Data debe procesar en tiempo real. Matemáticamente según {cite:p}`chen2014big`, se define como: 
+La velocidad de generación del dato es una métrica que cuantifica la rapidez con la que un sistema financiero produce eventos observables, como transacciones, actualizaciones en el libro de órdenes o cambios en el bid/ask, dentro de un intervalo de tiempo específico. Esta métrica permite evaluar la intensidad del flujo de información que un modelo predictivo o una arquitectura de Big Data debe procesar en tiempo real. Matemáticamente según Min Chen et al. {cite:p}`chen2014big`, se define como: 
 
 
 $$
@@ -201,7 +209,7 @@ $\text{rank}(X)$ = número de columnas linealmente independientes matemáticamen
 Equivalentemente: 
 
 $$
-D_e = \sum_{i=1}^{p} \mathbf{1}_{(\lambda_i > 0)}
+D_{e}=\left\{ \lambda_{i}:\lambda_{i}\gt 0 \right\}
 $$ (eq-dimensionalidad-autovalores)
 
 Donde: 
@@ -230,9 +238,13 @@ $$ (eq-dimensionalidad-ejemplo)
 
 Esto implica que, a pesar de contar con 300 variables, solo 8 dimensiones contienen información verdaderamente independiente. Las restantes variables son redundantes, muchas de ellas son combinaciones lineales de otras, y en conjunto pueden generar problemas de multicolinealidad. Además, muchas de estas variables son transformaciones derivadas del mismo precio u otra fuente, aportando principalmente ruido y poca información adicional útil para la modelización. 
 
+```{important}
+Un **Backtest** con métricas extraordinarias (Sharpe muy alto, drawdowns mínimos, aciertos casi perfectos) es más sospechoso que admirable. En Big Data financiero, la combinación de alta dimensionalidad, ruido microestructural y libertad en el diseño del modelo hace que el sobreajuste sea la norma, no la excepción. Cualquier resultado debe interpretarse bajo un protocolo de validación riguroso y transparente.
+```
+
 # Arquitectura conceptual del flujo de datos
 
-En los mercados financieros modernos, el análisis predictivo basado en tendencias depende directamente de la capacidad de gestionar las Tres V del Big Data: volumen, velocidad y variedad. El volumen creciente de transacciones, la velocidad extrema con la que se generan los eventos del mercado y la variedad cada vez mayor de fuentes, precios, volúmenes, libros de órdenes, noticias, sentimiento y datos alternativos obligan a diseñar arquitecturas capaces de capturar, procesar y transformar información heterogénea en señales predictivas robustas. En este contexto, la calidad del modelo no depende únicamente de la técnica empleada, sino de la capacidad del sistema para integrar datos diversos, limpiarlos, alinearlos temporalmente y extraer de ellos la estructura informativa relevante para anticipar la dirección del precio. 
+En los mercados financieros modernos, el análisis predictivo basado en tendencias depende directamente de la capacidad de gestionar las Tres V del Big Data: **Volumen**, **Velocidad** y **Variedad**. El volumen creciente de transacciones, la velocidad extrema con la que se generan los eventos del mercado y la variedad cada vez mayor de fuentes, precios, volúmenes, libros de órdenes, noticias, sentimiento y datos alternativos obligan a diseñar arquitecturas capaces de capturar, procesar y transformar información heterogénea en señales predictivas robustas. En este contexto, la calidad del modelo no depende únicamente de la técnica empleada, sino de la capacidad del sistema para integrar datos diversos, limpiarlos, alinearlos temporalmente y extraer de ellos la estructura informativa relevante para anticipar la dirección del precio. 
 
 La {numref}`fig-flujo-datos` ilustra precisamente esta lógica mediante tres capas funcionales que representan el flujo completo de un sistema predictivo basado en Big Data. La primera capa, adquisición y fuentes de datos, integra información proveniente de mercados tradicionales (precios, volúmenes, microestructura), datos alternativos (redes sociales, imágenes satelitales, sentimiento) y fundamentales económicos. La segunda capa, procesamiento y análisis en tiempo real, aplica técnicas de limpieza, normalización, análisis multivariante y reducción de dimensionalidad para transformar datos brutos en representaciones informativas aptas para modelización. Finalmente, la tercera capa, decisión y retroalimentación, utiliza modelos cuantitativos para generar señales de trading accionables, evaluarlas continuamente y retroalimentar el sistema, cerrando el ciclo de aprendizaje y optimización. 
 
@@ -260,13 +272,13 @@ En este contexto, el sistema financiero moderno ya no depende solo de datos de m
 
 ## Capa de procesamiento y análisis en tiempo real 
 
-En el centro del diagrama se observa el núcleo de procesamiento, donde los flujos de datos se transforman mediante streaming analytics, machine learning y algoritmos predictivos. Aquí se enfatiza la Velocidad, pues los sistemas deben operar con latencias de milisegundos para permitir decisiones automáticas en trading algorítmico o gestión de riesgos. 
+En el centro del diagrama se observa el núcleo de procesamiento, donde los flujos de datos se transforman mediante `streaming analytics`, `machine learning` y `algoritmos predictivos`. Aquí se enfatiza la **Velocidad**, pues los sistemas deben operar con latencias de milisegundos para permitir decisiones automáticas en trading algorítmico o gestión de riesgos. 
 
 La eficiencia del sistema depende de la capacidad de procesar y reaccionar en tiempo real, lo que convierte la velocidad en un principio de diseño, no solo una característica técnica. 
 
 ## Capa de decisión y retroalimentación 
 
-En la parte final del flujo, donde los resultados analíticos se traducen en decisiones como órdenes de compra/venta, alertas de riesgo y ajustes de portafolio, se integran las tres V y por tanto, el sistema se vuelve data-driven porque: 
+En la parte final del flujo, donde los resultados analíticos se traducen en decisiones como órdenes de compra/venta, alertas de riesgo y ajustes de portafolio, se integran las tres V y por tanto, el sistema se vuelve `data-driven` porque: 
 
 - El **volumen** de datos alimenta los modelos predictivos. 
 
@@ -296,9 +308,9 @@ align: center
 Variables Primarias.
 ```
  
-Esta imagen muestra la arquitectura de las variables primarias útiles para capturar la información relevante con la microestructura del mercado. El análisis de las medidas demostró que con un número de periodos de 18 periodos previos al punto de inflexión ET, permite obtener resultados satisfactorios. 
+Esta imagen muestra la arquitectura de las variables primarias útiles para capturar la información relevante con la microestructura del mercado. El análisis de las medidas demostró que con un número de periodos de 18 periodos previos al **Punto de Inflexión ET**, permite obtener resultados satisfactorios. 
 
-Esta imagen muestra la arquitectura de las variables primarias útiles para capturar la información relevante con la microestructura del mercado. Mediante un análisis de medidas exhaustivo, se demostró que 18 periodos previos al punto de inflexión ET permite obtener medidas con resultados significativos y satisfactorios en la comprensión de la dinámica del mercado. Sin embargo, el análisis de las medidas con este número de periodos mostró que la arquitectura de variables primarias se correlaciona significativamente con la información relevante de la microestructura del mercado, lo que sugiere que esta arquitectura es efectiva para capturar los patrones y tendencias clave del mercado. 
+Esta imagen muestra la arquitectura de las variables primarias útiles para capturar la información relevante con la microestructura del mercado. Mediante un análisis de medidas exhaustivo, se demostró que 18 periodos previos al **Punto de Inflexión ET** permite obtener medidas con resultados significativos y satisfactorios en la comprensión de la dinámica del mercado {cite:t}`argotty2023novel`. Sin embargo, el análisis de las medidas con este número de periodos mostró que la arquitectura de variables primarias se correlaciona significativamente con la información relevante de la microestructura del mercado, lo que sugiere que esta arquitectura es efectiva para capturar los patrones y tendencias clave del mercado.
 
 ### Variables basadas en el precio de cierre
 
@@ -375,7 +387,7 @@ La siguiente tabla resume los umbrales universalmente aceptados para clasificar 
 |Nivel de<br>volatilidad|Criterio<br>matemático|Interpretación|
 |---|---|---|
 |Baja|$\sigma_𝑣$ < $P_25$|**Actividad reducida**; bajo interés del mercado; movimientos de precio<br>poco fiables.|
-|Normal|$P_25$ ≤ $\sigma_𝑣$ ≤ $P_75|**Actividad típica del mercado**; condiciones estables; movimientos con<br>credibilidad moderada.|
+|Normal|$P_25$ ≤ $\sigma_𝑣$ ≤ $P_75$|**Actividad típica del mercado**; condiciones estables; movimientos con<br>credibilidad moderada.|
 |Alta|$\sigma_𝑣$ > $P_{75}$|**Aumento significativo de la actividad**; mayor intensidad informacional;<br>probabilidad elevada de ruptura o continuación de tendencia.|
 |Extremadamente Alta<br>(evento informacional)|$\sigma_𝑣$ > $P_{90}$|**Actividad excepcional**; entrada de institucionales; anuncios macro;<br>alta probabilidad de movimientos impulsivos.|
 ```
@@ -587,17 +599,15 @@ El uso excesivo de variables suele sacrificar la interpretabilidad y la trazabil
 
 ### Ausencia de análisis del contexto previo a los cambios de tendencia
 
-Muchos estudios en el ámbito financiero se enfocan en predecir retornos, clasificar movimientos o detectar patrones, pero generalmente omiten analizar en profundidad los momentos que preceden a los puntos de inflexión en los precios. Estos momentos, en los que se concentra información valiosa sobre posibles cambios de tendencia, suelen ser subestimados o pasados por alto, limitando la comprensión completa de la dinámica del mercado. 
+Muchos estudios en el ámbito financiero se enfocan en predecir retornos, clasificar movimientos o detectar patrones, pero generalmente omiten analizar en profundidad el comportamiento de los precios, especialmente los momentos que preceden a los `Puntos de Inflexión`. Estos momentos, en los que se concentra información valiosa sobre posibles cambios de tendencia, suelen ser subestimados o pasados por alto, limitando la comprensión completa de la dinámica del mercado. 
 
-Este vacío metodológico puede dificultar la identificación temprana de cambios relevantes y reducir la capacidad de anticipar movimientos significativos, lo que representa una limitación importante para la elaboración de modelos predictivos más robustos y explicativos. Al ignorar los momentos previos a los puntos de inflexión, donde se concentra la información más valiosa, implícitamente se limita la comprensión de la dinámica real del mercado. En este contexto, construir un modelo 
-
-predictivo sin la consideración de un punto de referencia en el mercado, que sirva como base para aplicar el conocimiento existente, puede limitar significativamente su precisión y utilidad, dificultando la detección de patrones relevantes y la anticipación de cambios futuros. 
+Este vacío metodológico puede dificultar la identificación temprana de cambios relevantes y reducir la capacidad de anticipar movimientos significativos, lo que representa una limitación importante para la elaboración de modelos predictivos más robustos y explicativos. Al ignorar los momentos previos a los puntos de inflexión, donde se concentra la información más valiosa, implícitamente se limita la comprensión de la dinámica real del mercado. En este contexto, construir un modelo predictivo sin la consideración de un `Punto de Referencia` en el mercado, que sirva como base para aplicar el conocimiento existente, puede limitar significativamente su precisión y utilidad, dificultando la detección de patrones relevantes y la anticipación de cambios futuros. 
 
 ### Dependencia excesiva de datos exógenos o `Análisis de Sentimiento`
 
 La **acción del precio**, si se analiza de manera adecuada, puede proporcionar información valiosa para construir modelos predictivos efectivos, reduciendo en cierta medida la dependencia de datos exógenos. Desde la perspectiva de la hipótesis de los mercados eficientes en su forma más fuerte, toda la información relevante ya está reflejada en el precio, lo que implica que los movimientos del mercado reflejan de manera inmediata las expectativas y valoraciones de los inversores. 
 
-En este contexto, el análisis técnico, enfocado en variables que miden la acción del precio, como medias móviles, niveles de soporte y resistencia, patrones de velas, indicadores de momentum y volumen, resulta siendo una herramienta útil para identificar tendencias y puntos de inflexión en el mercado. Sin embargo, es importante reconocer que, en la práctica, variables externas como noticias, eventos macroeconómicos o políticos pueden influir en el mercado y afectar la estabilidad y la predictibilidad de los modelos basados únicamente en la acción del precio. 
+En este contexto, el análisis técnico, enfocado en variables que miden la acción del precio, como medias móviles, niveles de soporte y resistencia, patrones de velas, indicadores de momentum y volumen, resulta siendo una herramienta útil para identificar en el mercado `Tendencias` y `Puntos de Inflexión`. Sin embargo, es importante reconocer que, en la práctica, variables externas como noticias, eventos macroeconómicos o políticos pueden influir en el mercado y afectar la estabilidad y la predictibilidad de los modelos basados únicamente en la acción del precio. 
 
 Aunque estos eventos pueden introducir ruido, en muchas ocasiones, la acción del precio refleja, en tiempo real, la suma de las expectativas y reacciones del mercado, constituyendo un indicador valioso para la toma de decisiones, siempre complementado con un análisis contextual adecuado. 
 

@@ -19,6 +19,10 @@ In parallel, various studies have shown that price action continues to be one of
 
 This TeachBook proposes an alternative approach: parsimonious, interpretable, and statistically robust models, built from multivariate analysis and variable selection techniques applied to large volumes of data. The objective is to provide a methodological framework that allows quantitative traders, asset managers, and research teams to build predictive models that are not only accurate, but also explainable and defensible before risk committees, regulators, and academic reviewers. 
 
+```{note}
+The **three Vs of Big Data** (Volume, Velocity, and Variety) are not a commercial slogan, but an operational description of the real constraints under which quantitative models work: memory limits, latency, and representation capacity. Ignoring these constraints leads to theoretically elegant but practically useless models.
+```
+
 ## Predictive Models
 
 The world of financial markets has experienced a significant change with the arrival of the big data era and machine learning technology. The ability to process large amounts of data in real time has allowed predictive models to improve their accuracy and effectiveness in price prediction and market pattern detection. However, the complexity of this data and the lack of interpretability of these models pose new challenges for analysts and investors. 
@@ -34,7 +38,7 @@ Current Landscape of Predictive Models.
  
 The complexity and volatility of financial markets have led to the search for more effective solutions for price prediction and informed decision-making. In this context, two key approaches are presented that have proven their ability to improve accuracy and efficiency in the prediction of financial markets. 
 
-Contemporary research in financial modeling is at a turning point marked by the convergence between Big Data, machine learning, and the growing need for explainable models. The use of advanced architectures, from high-frequency data pipelines to deep networks capable of capturing non-linear patterns, has significantly expanded predictive capacity in complex markets. However, this technical sophistication has been accompanied by critical challenges: opacity, fragility to regime changes, overfitting, and difficulties in justifying decisions in regulated environments. 
+Contemporary research in financial modeling is at a `Turning Point` marked by the convergence between Big Data, machine learning, and the growing need for explainable models. The use of advanced architectures, from high-frequency data pipelines to deep networks capable of capturing non-linear patterns, has significantly expanded predictive capacity in complex markets. However, this technical sophistication has been accompanied by critical challenges: opacity, fragility to regime changes, overfitting, and difficulties in justifying decisions in regulated environments. 
 
 In this context, price action emerges again as a primary source of robust information, while model governance and interpretability are consolidated as essential requirements to ensure operational reliability. The following sections synthesize recent advances and methodological tensions that define the current state of the field. 
 
@@ -44,7 +48,7 @@ Recent literature highlights the use of Big Data architectures to process massiv
 
 ### Machine learning and deep learning
 
-Models such as Random Forest, SVM, LSTM, and Transformers have shown the ability to capture non-linear relationships and complex patterns in financial time series. However, recent studies warn that their performance can deteriorate significantly in the presence of regime changes, microstructural noise, and overfitting, especially when rigorous validation protocols are not applied. 
+Models such as **Random Forest**, **SVM**, **LSTM**, and **Transformers** have shown the ability to capture non-linear relationships and complex patterns in financial time series as demonstrated by Gu et al. {cite:p}`gu2020empirical`. However, recent studies warn that their performance can deteriorate significantly in the presence of regime changes, microstructural noise, and overfitting, especially when rigorous validation protocols are not applied. 
 
 ### Price action
 
@@ -58,11 +62,15 @@ Growing concern about the opacity of models has fueled interest in explainable a
 
 Recent literature shows that modern financial prediction moves between two poles. On the one hand, Big Data architectures and deep learning models capable of processing massive volumes of information and capturing non-linear patterns. On the other hand, the growing need for interpretability, stability, and governance in environments where operational risk is critical. 
 
-Although advanced models like Random Forest, SVM, LSTM, and Transformers have demonstrated remarkable performance under controlled conditions, their fragility to regime changes, microstructural noise, and overfitting reveals that historical accuracy does not guarantee future robustness. In contrast, price action emerges as a more stable source of information less susceptible to distortions, while many derived indicators introduce redundancy and degrade model quality. 
+Although advanced models like **Random Forest**, **SVM**, **LSTM**, and **Transformers** have demonstrated remarkable performance under controlled conditions, their fragility to regime changes, microstructural noise, and overfitting reveals that historical accuracy does not guarantee future robustness. In contrast, price action emerges as a more stable source of information less susceptible to distortions, while many derived indicators introduce redundancy and degrade model quality. 
 
 Added to this panorama is a transversal finding: complexity does not always translate into better predictive capacity, and in financial markets, explainability is an operational requirement, not a methodological luxury. The literature converges that models must balance accuracy and transparency, integrating rigorous validation practices, dimensionality reduction, and XAI (Explainable Artificial Intelligence) techniques that allow justifying decisions in regulated contexts. 
 
 Furthermore, studies suggest that the future of financial prediction depends not only on more sophisticated models, but on more governable, auditable, and resilient models, capable of maintaining performance under changing conditions and providing understandable signals for decision making. Thus, scientific advancement in the field of financial prediction depends not only on more powerful models, but on more responsible models. The literature converges that the optimal combination integrates robust data (price action), parsimonious or explainable models, strict validation, and solid governance of the model lifecycle. This balance is what allows transforming technical precision into real operational value. 
+
+```{tip}
+In **Financial Time Series Analysis**, conventional random cross-validation is not suitable because it breaks temporal dependence and can cause **Data Leakage**. Instead, it is recommended to use validation schemes that respect the temporal sequence, such as **Walk-Forward Validation** or **Rolling Origin**, which allow the model to be evaluated more realistically. Furthermore, techniques such as **Purged k-fold with temporal embargo** and a strict separation between training, validation, and testing sets help reduce performance overestimation and provide a more reliable model evaluation.
+```
 
 # Theoretical Foundations
 
@@ -208,6 +216,10 @@ $$ (eq-dimensionality-example)
 
 This implies that, despite having 300 variables, only 8 dimensions contain truly independent information. The remaining variables are redundant; many of them are linear combinations of others, and together they can cause multicollinearity problems. Furthermore, many of these variables are derived transformations of the same price or another source, mainly providing noise and little useful additional information for modeling. 
 
+```{important}
+A **Backtest** with extraordinary metrics (very high Sharpe, minimal drawdowns, near-perfect hits) is more suspicious than admirable. In financial Big Data, the combination of high dimensionality, microstructural noise, and freedom in model design makes overfitting the rule, not the exception. Any result must be interpreted under a rigorous and transparent validation protocol.
+```
+
 # Conceptual Architecture of the Data Flow
 
 In modern financial markets, trend-based predictive analysis depends directly on the ability to manage the Three Vs of Big Data: volume, velocity, and variety. The growing volume of transactions, the extreme velocity with which market events are generated, and the increasing variety of sources—prices, volumes, order books, news, sentiment, and alternative data—require designing architectures capable of capturing, processing, and transforming heterogeneous information into robust predictive signals. In this context, the quality of the model depends not only on the technique used but on the system's ability to integrate diverse data, clean it, temporally align it, and extract the relevant informative structure from it to anticipate the direction of the price. 
@@ -269,7 +281,7 @@ align: center
 Primary Variables.
 ```
  
-This image shows the architecture of the primary variables useful for capturing relevant information regarding market microstructure. An exhaustive measure analysis demonstrated that 18 periods prior to the ET inflection point allow obtaining measures with significant and satisfactory results in understanding market dynamics. Furthermore, the analysis of measures with this number of periods showed that the primary variable architecture correlates significantly with relevant market microstructure information, suggesting that this architecture is effective in capturing key market patterns and trends. 
+This image shows the architecture of the primary variables useful for capturing relevant information regarding market microstructure. Through an exhaustive measure analysis, it was demonstrated that 18 periods prior to the **ET Inflection Point** allows obtaining measures with significant and satisfactory results in understanding market dynamics {cite:t}`argotty2023novel`. However, the analysis of the measures with this number of periods showed that the primary variable architecture correlates significantly with the relevant information of the market microstructure, which suggests that this architecture is effective for capturing key market patterns and trends.
 
 ### Price-based variables
 
@@ -540,15 +552,15 @@ Excessive use of variables often sacrifices interpretability and traceability of
 
 ### Absence of context analysis prior to trend changes
 
-Many studies in the financial field focus on predicting returns, classifying movements, or detecting patterns, but generally fail to thoroughly analyze the moments preceding price inflection points. These moments, in which valuable information about possible trend changes is concentrated, are often underestimated or overlooked, limiting the complete understanding of market dynamics. 
+Many studies in the financial field focus on predicting returns, classifying movements, or detecting patterns, but generally fail to thoroughly analyze the moments preceding price `Inflection Points`. These moments, in which valuable information about possible trend changes is concentrated, are often underestimated or overlooked, limiting the complete understanding of market dynamics. 
 
-This methodological gap can hinder the early identification of relevant changes and reduce the ability to anticipate significant movements, representing an important limitation for the development of more robust and explanatory predictive models. By ignoring the moments before inflection points, where the most valuable information is concentrated, the understanding of actual market dynamics is implicitly limited. In this context, building a predictive model without considering a reference point in the market, to serve as a basis for applying existing knowledge, can significantly limit its accuracy and usefulness, hindering the detection of relevant patterns and anticipation of future changes. 
+This methodological gap can hinder the early identification of relevant changes and reduce the ability to anticipate significant movements, representing an important limitation for the development of more robust and explanatory predictive models. By ignoring the moments before `Inflection Points`, where the most valuable information is concentrated, the understanding of actual market dynamics is implicitly limited. In this context, building a predictive model without considering a `Reference Point` in the market, to serve as a basis for applying existing knowledge, can significantly limit its accuracy and usefulness, hindering the detection of relevant patterns and anticipation of future changes. 
 
 ### Excessive reliance on exogenous data or `Sentiment Analysis`
 
 **Price action**, if properly analyzed, can provide valuable information for building effective predictive models, reducing to some extent the reliance on exogenous data. From the perspective of the efficient market hypothesis in its strongest form, all relevant information is already reflected in the price, which implies that market movements immediately reflect investor expectations and valuations. 
 
-In this context, technical analysis, focused on variables measuring price action, such as moving averages, support and resistance levels, candlestick patterns, momentum and volume indicators, turns out to be a useful tool for identifying trends and inflection points in the market. However, it is important to recognize that, in practice, external variables such as news, macroeconomic or political events can influence the market and affect the stability and predictability of models based solely on price action. 
+In this context, technical analysis, focused on variables measuring price action, such as moving averages, support and resistance levels, candlestick patterns, momentum and volume indicators, turns out to be a useful tool for identifying `Trends` and `Inflection Points` in the market. However, it is important to recognize that, in practice, external variables such as news, macroeconomic or political events can influence the market and affect the stability and predictability of models based solely on price action. 
 
 Although these events can introduce noise, on many occasions, price action reflects, in real time, the sum of market expectations and reactions, constituting a valuable indicator for decision making, always complemented by an adequate contextual analysis. 
 
