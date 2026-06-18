@@ -13,6 +13,15 @@ A continuación se presenta una serie de preguntas de opción múltiple. Lee det
 
 ---
 
+````{only} html
+```{code-cell} ipython3
+:tags: ["remove-input"]
+from jupyterquiz import display_quiz
+display_quiz("quiz_cap1.json")
+```
+````
+
+````{only} latex
 ```{admonition} Pregunta 1
 :class: dropdown
 
@@ -102,3 +111,4 @@ A continuación se presenta una serie de preguntas de opción múltiple. Lee det
 
 **Explicación:** Correcto. El percentil 75 corresponde a Alta volatilidad, asociada a mayor intensidad informacional.
 ```
+````
