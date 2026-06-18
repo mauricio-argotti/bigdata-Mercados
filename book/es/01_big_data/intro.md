@@ -109,7 +109,7 @@ Según estimaciones recientes, un fondo cuantitativo de tamaño medio puede proc
 
 #### Volumen de Datos ($𝑉$) 
 
-La cantidad total de datos (𝑉) generados en un intervalo de tiempo (intervalo de análisis definido por el analista: un segundo, una hora, una sesión de mercado, etc). De acuerdo con {cite:t}`gandomi2015beyond` la fórmula que mejor explica este criterio es: 
+La cantidad total de datos (𝑉) generados en un intervalo de tiempo (intervalo de análisis definido por el analista: un segundo, una hora, una sesión de mercado, etc). De acuerdo con Gandomi y Haider{cite:t}`gandomi2015beyond` la fórmula que mejor explica este criterio es: 
 
 
 $$
@@ -412,7 +412,7 @@ Ahora suponga que, a partir de una ventana histórica de 2.000 observaciones del
 |$P_{25}$|180|Baja|Actividad reducida; bajo interés del mercado; movimientos<br>del precio poco fiables.|
 |$P_{50}$|260|Normal (media)|Comportamiento típico del mercado; condiciones estables; credibilidad<br>moderada.|
 |**$P_{75}$**|**410**|**Alta**|**Aumento significativo de la actividad**; mayor intensidad informacional; probabilidad elevada de ruptura o continuación de tendencia.|
-|$P_{90}$|580|Extremadamente Alta<br>(evento informacional)|Actividad excepcional; entrada de institucionales; anuncios macro;<br> movimientos impulsivos y direccionales.|
+|$P_{90}$|580|Extremadamente Alta<br>(evento informacional)|Actividad excepcional; entrada de institucionales; anuncios macro;<br>movimientos impulsivos y direccionales.|
 ```
 
 Al hacer una Interpretación operativa en función de los percentiles anteriores y una volatilidad del volumen de 448.2 ticks, ubicada por encima del percentil 75, indica: 
