@@ -4,7 +4,7 @@
 
 **INTRODUCCIÓN** 
 
-La creciente digitalización de los mercados financieros ha generado un ecosistema caracterizado por volúmenes masivos de datos, latencias reducidas y una diversidad creciente de fuentes de información. Este fenómeno, ampliamente documentado en la literatura reciente, ha impulsado el desarrollo de modelos predictivos basados en Big Data y aprendizaje automático para anticipar el movimiento direccional del precio de activos financieros. Sin embargo, la proliferación de modelos cada vez más complejos —**como redes neuronales profundas, LSTM o Transformers**— ha introducido un nuevo desafío: **la pérdida de interpretabilidad y la dificultad para justificar decisiones de inversión basadas en modelos opacos**. 
+La creciente digitalización de los mercados financieros ha generado un ecosistema caracterizado por volúmenes masivos de datos, latencias reducidas y una diversidad creciente de fuentes de información. Este fenómeno, ampliamente documentado en la literatura reciente, ha impulsado el desarrollo de modelos predictivos basados en Big Data y aprendizaje automático para anticipar el movimiento direccional del precio de activos financieros. Sin embargo, la proliferación de modelos cada vez más complejos —como **redes neuronales profundas**, **LSTM** o **Transformers**— ha introducido un nuevo desafío: **la pérdida de interpretabilidad y la dificultad para justificar decisiones de inversión basadas en modelos opacos**. 
 
 
 ```{figure} ../../_static/big_data_figuras/1_BigData.png
@@ -17,11 +17,9 @@ Big Data en los Mercados Financieros.
 ```
  
 
-En paralelo, diversos estudios han demostrado que la acción del precio (price action) continúa siendo una de las fuentes más robustas y estables de información predictiva, especialmente en horizontes de corto plazo y en mercados altamente líquidos. No obstante, la abundancia de variables derivadas del precio genera redundancia, multicolinealidad y ruido, lo que compromete la estabilidad de los coeficientes y la capacidad de generalización de los modelos. 
+En paralelo, diversos estudios han demostrado que la acción del precio (**Price Action**) continúa siendo una de las fuentes más robustas y estables de información predictiva, especialmente en horizontes de corto plazo y en mercados altamente líquidos. No obstante, la abundancia de variables derivadas del precio genera redundancia, multicolinealidad y ruido, lo que compromete la estabilidad de los coeficientes y la capacidad de generalización de los modelos. 
 
-Este TeachBook propone un enfoque alternativo: modelos parsimoniosos, interpretables y estadísticamente robustos, construidos a partir de análisis multivariante y técnicas de selección de variables aplicadas a grandes volúmenes de datos. El objetivo es proporcionar un marco metodológico que permita a traders cuantitativos, gestores de activos y equipos de investigación 
-
-construir modelos predictivos que no solo sean precisos, sino también explicables y defendibles ante comités de riesgo, reguladores y revisores académicos. 
+Este TeachBook propone un enfoque alternativo: modelos parsimoniosos, interpretables y estadísticamente robustos, construidos a partir de análisis multivariante y técnicas de selección de variables aplicadas a grandes volúmenes de datos. El objetivo es proporcionar un marco metodológico que permita a traders cuantitativos, gestores de activos y equipos de investigación construir modelos predictivos que no solo sean precisos, sino también explicables y defendibles ante comités de riesgo, reguladores y revisores académicos. 
 
 ## Modelos Predictivos
 
@@ -40,11 +38,9 @@ Panorama Actual de los Modelos Predictivos.
 
 La complejidad y volatilidad de los mercados financieros han llevado a la búsqueda de soluciones más efectivas para la predicción de precios y la toma de decisiones informadas. En este contexto, se presentan dos enfoques clave que han demostrado su capacidad para mejorar la precisión y eficiencia en la predicción de mercados financieros. 
 
-La investigación contemporánea en modelización financiera se encuentra en un punto de inflexión marcado por la convergencia entre Big Data, aprendizaje automático y la necesidad creciente de modelos explicables. El uso de arquitecturas avanzadas, desde pipelines de datos de alta frecuencia hasta redes profundas capaces de capturar patrones no lineales, ha ampliado significativamente la capacidad predictiva en mercados complejos. Sin embargo, esta sofisticación técnica ha venido acompañada de desafíos críticos: opacidad, fragilidad ante cambios de régimen, sobreajuste y dificultades para justificar decisiones en entornos regulados. 
+La investigación contemporánea en modelización financiera se encuentra en un punto de inflexión marcado por la convergencia entre Big Data, aprendizaje automático y **la necesidad creciente de modelos explicables**. El uso de arquitecturas avanzadas, desde pipelines de datos de alta frecuencia hasta redes profundas capaces de capturar patrones no lineales, ha ampliado significativamente la capacidad predictiva en mercados complejos. Sin embargo, esta sofisticación técnica ha venido acompañada de desafíos críticos: opacidad, fragilidad ante cambios de régimen, sobreajuste y dificultades para justificar decisiones en entornos regulados. 
 
-En este contexto, la acción del precio emerge nuevamente como una fuente primaria de información robusta, mientras que la gobernanza y la interpretabilidad de modelos se consolidan como 
-
-requisitos esenciales para garantizar la fiabilidad operativa. Los siguientes apartados sintetizan los avances recientes y las tensiones metodológicas que definen el estado actual del campo. 
+En este contexto, la acción del precio emerge nuevamente como una fuente primaria de información robusta, mientras que la gobernanza y la interpretabilidad de modelos se consolidan como requisitos esenciales para garantizar la fiabilidad operativa. Los siguientes apartados sintetizan los avances recientes y las tensiones metodológicas que definen el estado actual del campo. 
 
 ### Modelos predictivos basados en Big Data
 
@@ -52,7 +48,7 @@ La literatura reciente destaca el uso de arquitecturas Big Data para procesar fl
 
 ### Aprendizaje automático y deep learning
 
-Modelos como Random Forest, SVM, LSTM y Transformers han mostrado capacidad para capturar relaciones no lineales y patrones complejos en series temporales financieras. Sin embargo, estudios recientes advierten que su desempeño puede deteriorarse significativamente en presencia de cambios de régimen, ruido microestructural y sobreajuste, especialmente cuando no se aplican protocolos rigurosos de validación. 
+Modelos como **Random Forest**, **SVM**, **LSTM** y **Transformers** han mostrado capacidad para capturar relaciones no lineales y patrones complejos en series temporales financieras {cite:p}`gu2020empirical`. Sin embargo, estudios recientes advierten que su desempeño puede deteriorarse significativamente en presencia de cambios de régimen, ruido microestructural y sobreajuste, especialmente cuando no se aplican protocolos rigurosos de validación. 
 
 ### Acción del precio
 
@@ -60,7 +56,7 @@ La acción del precio sigue siendo una de las fuentes más estables y predictiva
 
 ### Interpretabilidad y gobernanza de modelos
 
-La creciente preocupación por la opacidad de los modelos ha impulsado el interés en enfoques explicables (XAI) y modelos lineales o semilineales que permitan comprender la relación entre variables predictoras y señales de trading. La literatura enfatiza la necesidad de modelos que combinen precisión con interpretabilidad, especialmente en contextos regulados y de alto riesgo operativo. 
+La creciente preocupación por la opacidad de los modelos ha impulsado el interés en enfoques explicables (**XAI**) y modelos lineales o semilineales que permitan comprender la relación entre variables predictoras y señales de trading. La literatura enfatiza la necesidad de modelos que combinen precisión con interpretabilidad, especialmente en contextos regulados y de alto riesgo operativo. 
 
 ### Precisión vs interpretabilidad
 
@@ -113,7 +109,7 @@ Según estimaciones recientes, un fondo cuantitativo de tamaño medio puede proc
 
 #### Volumen de Datos ($𝑉$) 
 
-La cantidad total de datos (𝑉) generados en un intervalo de tiempo (intervalo de análisis definido por el analista: un segundo, una hora, una sesión de mercado, etc). De acuerdo con {cite:p}`gandomi2015beyond` la fórmula que mejor explica este criterio es: 
+La cantidad total de datos (𝑉) generados en un intervalo de tiempo (intervalo de análisis definido por el analista: un segundo, una hora, una sesión de mercado, etc). De acuerdo con {cite:t}`gandomi2015beyond` la fórmula que mejor explica este criterio es: 
 
 
 $$
@@ -232,9 +228,7 @@ $$
 D_{e} = 𝑟𝑎𝑛𝑘 (𝑋) = 8 
 $$ (eq-dimensionalidad-ejemplo)
 
-Esto implica que, a pesar de contar con 300 variables, solo 8 dimensiones contienen información verdaderamente independiente. Las restantes variables son redundantes, muchas de ellas son 
-
-combinaciones lineales de otras, y en conjunto pueden generar problemas de multicolinealidad. Además, muchas de estas variables son transformaciones derivadas del mismo precio u otra fuente, aportando principalmente ruido y poca información adicional útil para la modelización. 
+Esto implica que, a pesar de contar con 300 variables, solo 8 dimensiones contienen información verdaderamente independiente. Las restantes variables son redundantes, muchas de ellas son combinaciones lineales de otras, y en conjunto pueden generar problemas de multicolinealidad. Además, muchas de estas variables son transformaciones derivadas del mismo precio u otra fuente, aportando principalmente ruido y poca información adicional útil para la modelización. 
 
 # Arquitectura conceptual del flujo de datos
 
@@ -290,7 +284,7 @@ A continuación, se describen los cinco grupos de variables que conforman este n
 
 ## Variables primarias 
 
-Las variables primarias representan el corazón cuantitativo del análisis. Son medidas directas, no transformadas y altamente interpretables que describen el comportamiento del precio y del volumen en las 18 velas previas al instante ET (punto de inflexión). Su función es capturar la microestructura del mercado justo antes de que se produzca un giro direccional. 
+Las variables primarias representan el corazón cuantitativo del análisis. Son medidas directas, no transformadas y altamente interpretables que describen el comportamiento del precio y del volumen en las 18 velas previas al instante **ET** (**Punto de Inflexión**). Su función es capturar la microestructura del mercado justo antes de que se produzca un giro direccional. 
 
 
 ```{figure} ../../_static/big_data_figuras/5_Problemas_estructurales.png
@@ -380,13 +374,13 @@ La siguiente tabla resume los umbrales universalmente aceptados para clasificar 
 
 |Nivel de<br>volatilidad|Criterio<br>matemático|Interpretación|
 |---|---|---|
-|Baja|𝜎𝑣< P25|**Actividad reducida**; bajo interés del mercado; movimientos de<br>preciopoco fiables.|
-|Normal|P25 ≤𝜎𝑣≤ P75|**Actividad**<br>**típica**<br>**del**<br>**mercado**;<br>condiciones<br>estables;<br>movimientos con credibilidad moderada.|
-|Alta|𝜎𝑣> P75|**Aumento significativo de la actividad**; mayor intensidad<br>informacional; probabilidad elevada de ruptura o continuación<br>de tendencia.|
-|Extremadamente<br>Alta<br>(evento<br>informacional)|𝜎𝑣> P90|**Actividad excepcional**; entrada de institucionales; anuncios<br>macro; alta probabilidad de movimientos impulsivos.|
+|Baja|$\sigma_𝑣$ < $P_25$|**Actividad reducida**; bajo interés del mercado; movimientos de precio<br>poco fiables.|
+|Normal|$P_25$ ≤ $\sigma_𝑣$ ≤ $P_75|**Actividad típica del mercado**; condiciones estables; movimientos con<br>credibilidad moderada.|
+|Alta|$\sigma_𝑣$ > $P_{75}$|**Aumento significativo de la actividad**; mayor intensidad informacional;<br>probabilidad elevada de ruptura o continuación de tendencia.|
+|Extremadamente Alta<br>(evento informacional)|$\sigma_𝑣$ > $P_{90}$|**Actividad excepcional**; entrada de institucionales; anuncios macro;<br>alta probabilidad de movimientos impulsivos.|
 ```
 
-Es importante tener en cuenta que, un aumento brusco en la volatilidad del volumen (𝜎𝑣) suele anticipar rupturas de soporte/resistencia, cambios de tendencia, movimientos impulsivos, entrada de participantes institucionales, entre otros aspectos clave en la negociación de instrumentos financieros. 
+Es importante tener en cuenta que, un aumento brusco en la volatilidad del volumen ($\sigma_v$) suele anticipar rupturas de soporte/resistencia, cambios de tendencia, movimientos impulsivos, entrada de participantes institucionales, entre otros aspectos clave en la negociación de instrumentos financieros. 
 
 _**Ejemplo:**_
 
@@ -415,10 +409,10 @@ Ahora suponga que, a partir de una ventana histórica de 2.000 observaciones del
 
 |Percentil|Valor<br>(ticks)|Volatilidad|Interpretación operativa|
 |---|---|---|---|
-|P25|180|Baja|Actividad reducida; bajo interés del mercado;<br>movimientos del precio poco fiables.|
-|P50|260|Normal (media)|Comportamiento típico del mercado; condiciones<br>estables; credibilidad moderada.|
-|**P75**|**410**|**Alta**|**Aumento significativo de la actividad**; mayor intensidad<br>informacional; probabilidad elevada de ruptura o<br>continuación de tendencia.|
-|P90|580|Extremadamente Alta<br>(evento informacional)|Actividad excepcional; entrada de institucionales;<br>anuncios macro; movimientos impulsivos y direccionales.|
+|$P_{25}$|180|Baja|Actividad reducida; bajo interés del mercado; movimientos<br>del precio poco fiables.|
+|$P_{50}$|260|Normal (media)|Comportamiento típico del mercado; condiciones estables; credibilidad<br>moderada.|
+|**$P_{75}$**|**410**|**Alta**|**Aumento significativo de la actividad**; mayor intensidad informacional; probabilidad elevada de ruptura o continuación de tendencia.|
+|$P_{90}$|580|Extremadamente Alta<br>(evento informacional)|Actividad excepcional; entrada de institucionales; anuncios macro;<br> movimientos impulsivos y direccionales.|
 ```
 
 Al hacer una Interpretación operativa en función de los percentiles anteriores y una volatilidad del volumen de 448.2 ticks, ubicada por encima del percentil 75, indica: 
