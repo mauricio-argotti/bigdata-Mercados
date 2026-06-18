@@ -109,7 +109,7 @@ Según estimaciones recientes, un fondo cuantitativo de tamaño medio puede proc
 
 #### Volumen de Datos ($𝑉$) 
 
-La cantidad total de datos (𝑉) generados en un intervalo de tiempo (intervalo de análisis definido por el analista: un segundo, una hora, una sesión de mercado, etc). De acuerdo con Gandomi y Haider{cite:t}`gandomi2015beyond` la fórmula que mejor explica este criterio es: 
+La cantidad total de datos (𝑉) generados en un intervalo de tiempo (intervalo de análisis definido por el analista: un segundo, una hora, una sesión de mercado, etc). De acuerdo con Gandomi y Haider{cite:p}`gandomi2015beyond` la fórmula que mejor explica este criterio es: 
 
 
 $$
