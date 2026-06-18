@@ -281,7 +281,7 @@ align: center
 Primary Variables.
 ```
  
-This image shows the architecture of the primary variables useful for capturing relevant information regarding market microstructure. Through an exhaustive measure analysis, it was demonstrated that 18 periods prior to the **ET Inflection Point** allows obtaining measures with significant and satisfactory results in understanding market dynamics {cite:t}`argotty2023novel`. However, the analysis of the measures with this number of periods showed that the primary variable architecture correlates significantly with the relevant information of the market microstructure, which suggests that this architecture is effective for capturing key market patterns and trends.
+This image shows the architecture of the primary variables, which are useful for capturing relevant information from the market microstructure. Through an exhaustive analysis of the measures, it was demonstrated that considering 18 periods prior to the **ET Inflection Point** allows obtaining indicators with significant and satisfactory results for understanding market dynamics, according to Argotty {cite:t}`argotty2023novel`. However, the analysis of these measures over that number of periods revealed that the primary variable architecture correlates significantly with key market microstructure information, suggesting that this structure is effective for identifying relevant patterns and trends.
 
 ### Price-based variables
 
